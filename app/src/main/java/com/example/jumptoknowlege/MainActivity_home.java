@@ -8,15 +8,14 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity_home extends AppCompatActivity {
-    Button btnlogin;
+    Button btnLogin;
     Button btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
-        btnlogin =(Button)findViewById(R.id.btnLogin);
-        btnRegister=(Button)findViewById(R.id.btnRegister);
-        btnlogin.setOnClickListener(new View.OnClickListener()
+        btnLogin =(Button)findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener()
 
                 {
                     @Override
@@ -26,7 +25,7 @@ public class MainActivity_home extends AppCompatActivity {
                         startActivity(intenet);
                     }
                 });
-
+        btnRegister =(Button)findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(new View.OnClickListener()
 
         {
